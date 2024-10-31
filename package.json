@@ -1,0 +1,16 @@
+{
+	"name": "merge-vitest-cypress-coverages",
+	"private": true,
+	"packageManager": "pnpm@9.12.3",
+	"scripts": {
+		"test": "pnpm vitest && pnpm cypress",
+		"vitest": "vitest run --coverage",
+		"cypress": "cypress run --e2e --browser=chrome"
+	},
+	"devDependencies": {
+		"@cypress/code-coverage": "^3.13.5",
+		"@vitest/coverage-istanbul": "^2.1.4",
+		"cypress": "^13.15.1",
+		"vitest": "^2.1.4"
+	}
+}
