@@ -1,8 +1,4 @@
-import { defineConfig, coverageConfigDefaults } from 'vitest/config';
-
-function getVitestDirs() {
-    return fg.globSync('**/__tests__', { onlyDirectories: true, ignore: ['**/node_modules/**'] });
-}
+import { defineConfig } from 'vitest/config';
 
 export default defineConfig({
     test: {
