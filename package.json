@@ -5,7 +5,7 @@
 	"scripts": {
 		"test": "pnpm vitest && pnpm cypress",
 		"vitest": "vitest run --coverage",
-		"cypress": "cypress open"
+		"cypress": "cypress run --e2e --browser=chrome"
 	},
 	"devDependencies": {
 		"@cypress/code-coverage": "^3.13.5",
