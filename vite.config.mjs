@@ -13,9 +13,8 @@ export default defineConfig({
     test: {
         coverage: {
             provider: 'istanbul',
-            clean: true,
-            reportsDirectory: '.coverage-vitest',
-            reporter: 'json'
+            reportsDirectory: '.nyc_coverage',
+            reporter: [['json', {file:'vitest-coverage.json'}]],
         }
     }
 })

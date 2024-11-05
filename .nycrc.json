@@ -1,3 +1,4 @@
 {
-    "report-dir": "./.coverage-cypress"
+    "reporter": "json",
+    "report-dir": ".nyc_coverage"
 }
